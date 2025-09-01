@@ -129,6 +129,26 @@ button {
     display: none;
 }
 
+/* Jumpscare styling */
+.jumpscare {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumpscare-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Heart animation */
 @keyframes fall {
     0% {
