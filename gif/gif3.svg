@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Face -->
+  <circle cx="100" cy="100" r="80" fill="#FFDA79" stroke="#000" stroke-width="2"/>
+  
+  <!-- Eyes -->
+  <g id="eyes">
+    <!-- Left eye happy -->
+    <circle cx="70" cy="80" r="10" fill="white" stroke="#000" stroke-width="2"/>
+    <circle cx="70" cy="80" r="5" fill="#000">
+      <animate attributeName="cy" values="80;78;80" dur="1s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Right eye happy -->
+    <circle cx="130" cy="80" r="10" fill="white" stroke="#000" stroke-width="2"/>
+    <circle cx="130" cy="80" r="5" fill="#000">
+      <animate attributeName="cy" values="80;78;80" dur="1s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Happy mouth -->
+  <path d="M70,120 Q100,150 130,120" stroke="#000" stroke-width="3" fill="#FF6B6B">
+    <animate attributeName="d" values="M70,120 Q100,150 130,120;M70,125 Q100,155 130,125;M70,120 Q100,150 130,120" dur="1s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Eyebrows -->
+  <path d="M50,65 Q65,55 80,65" stroke="#000" stroke-width="2" fill="none"/>
+  <path d="M120,65 Q135,55 150,65" stroke="#000" stroke-width="2" fill="none"/>
+  
+  <!-- Blush -->
+  <circle cx="60" cy="105" r="10" fill="#FF9999" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="140" cy="105" r="10" fill="#FF9999" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Hearts animation -->
+  <g id="hearts">
+    <path d="M50,40 Q50,20 70,20 Q90,20 90,40 Q90,60 70,80 Q50,60 50,40 Z" fill="#FF6B6B" opacity="0.8" transform="scale(0.4) translate(50, 0)">
+      <animate attributeName="transform" values="scale(0.4) translate(50, 0);scale(0.4) translate(50, -30);scale(0.4) translate(50, -60)" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8;0.4;0" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="M50,40 Q50,20 70,20 Q90,20 90,40 Q90,60 70,80 Q50,60 50,40 Z" fill="#FF6B6B" opacity="0.8" transform="scale(0.4) translate(250, 20)">
+      <animate attributeName="transform" values="scale(0.4) translate(250, 20);scale(0.4) translate(250, -10);scale(0.4) translate(250, -40)" dur="2.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8;0.4;0" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M50,40 Q50,20 70,20 Q90,20 90,40 Q90,60 70,80 Q50,60 50,40 Z" fill="#FF6B6B" opacity="0.8" transform="scale(0.4) translate(150, 10)">
+      <animate attributeName="transform" values="scale(0.4) translate(150, 10);scale(0.4) translate(150, -20);scale(0.4) translate(150, -50)" dur="2.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8;0.4;0" dur="2.8s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <!-- Bouncing animation -->
+  <animateTransform
+    attributeName="transform"
+    attributeType="XML"
+    type="translate"
+    values="0,0; 0,-5; 0,0"
+    dur="0.5s"
+    repeatCount="indefinite"
+  />
+</svg>

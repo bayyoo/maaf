@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maafin Aku</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JIHAN MAAFIN AKU 💖</h1>
+        
+        <div class="gif-container" id="media-container">
+            <img id="emotion-gif" src="gif/gif1.gif" alt="Emoji Nangis" width="200" height="200">
+            <video id="happy-video" width="200" height="200" style="display: none;" autoplay loop muted playsinline>
+                <source src="3.mp4" type="video/mp4">
+                Browser Anda tidak mendukung elemen video.
+            </video>
+        </div>
+        
+        <div class="buttons">
+            <button id="yes-btn">Iya, dimaafin kok 😊</button>
+            <button id="no-btn">Ogah 😒</button>
+        </div>
+        
+        <div class="confirmation" id="confirmation">
+            Yeeey! Makasih Jihan <span class="heart">❤️</span>
+            <div class="whatsapp-button-container">
+                <a href="https://wa.me/628567427603?text=aku%20udah%20maafin%2C%20jangan%20di%20ulangi%20lagi%20ya%2C%20besok%20kamu%20aku%20belikan%20eskrim%2C%20aku%20juga%20mau%20minum%20obat%20habis%20ini%20sama%20makan%20sama%20minum%20air%20putih%20yg%20banyak%20supaya%20sembuh" class="whatsapp-button" id="whatsapp-btn">Pencet ini</a>
+            </div>
+        </div>
+        
+        <audio id="happy-sound" preload="auto">
+            <source src="happy-sound.mp3" type="audio/mpeg">
+            <!-- Fallback message if audio not supported -->
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+    </div>
+    
+    <div id="confetti-container"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
